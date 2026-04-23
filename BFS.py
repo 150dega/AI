@@ -1,16 +1,16 @@
-# Breadth First Search (BFS) using Queue
+
 
 def bfs(graph, start):
-    visited = []      # List to keep track of visited nodes
-    queue = []        # Queue for BFS traversal
+    visited = []     
+    queue = []        
 
-    # Add starting node
+   
     visited.append(start)
     queue.append(start)
 
-    # Traverse the graph
+   
     while queue:
-        node = queue.pop(0)   # Remove first element (FIFO)
+        node = queue.pop(0)   
         print(node, end=" ")
 
         # Visit all neighbors
@@ -20,7 +20,7 @@ def bfs(graph, start):
                 queue.append(neighbor)
 
 
-# Example Graph (Adjacency List)
+
 graph = {
     'A': ['B', 'C'],
     'B': ['D', 'E'],
