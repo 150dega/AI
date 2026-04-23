@@ -28,7 +28,7 @@ grandfather(X, Y) :- grandparent(X, Y), male(X).
 grandmother(X, Y) :- grandparent(X, Y), female(X).
 
 '''% Sample Queries
-
+run any one query at a time
 ?- father(john, mary).
 ?- mother(susan, david).
 ?- sibling(mary, david).
